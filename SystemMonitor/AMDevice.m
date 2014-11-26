@@ -23,6 +23,7 @@
 // Overriden
 @property (nonatomic, strong) DeviceInfo     *deviceInfo;
 @property (nonatomic, strong) CPUInfo        *cpuInfo;
+@property (nonatomic, strong) GPSInfo        *gpsInfo;
 @property (nonatomic, strong) GPUInfo        *gpuInfo;
 @property (nonatomic, copy)   NSArray        *processes;
 @property (nonatomic, strong) RAMInfo        *ramInfo;
@@ -34,6 +35,7 @@
 @implementation AMDevice
 @synthesize deviceInfo;
 @synthesize cpuInfo;
+@synthesize gpsInfo;
 @synthesize gpuInfo;
 @synthesize processes;
 @synthesize ramInfo;
@@ -54,6 +56,7 @@
         AppDelegate *app = [AppDelegate sharedDelegate];
         deviceInfo = [app.deviceInfoCtrl getDeviceInfo];
         cpuInfo = [app.cpuInfoCtrl getCPUInfo];
+        gpsInfo = [app.gpsInfoCtrl getGPSInfo];
         gpuInfo = [app.gpuInfoCtrl getGPUInfo];
         processes = [app.processInfoCtrl getProcesses];
         ramInfo = [app.ramInfoCtrl getRAMInfo];

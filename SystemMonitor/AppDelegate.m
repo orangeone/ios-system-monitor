@@ -21,6 +21,7 @@
 @synthesize iDevice;
 @synthesize cpuInfoCtrl;
 @synthesize deviceInfoCtrl;
+@synthesize gpsInfoCtrl;
 @synthesize gpuInfoCtrl;
 @synthesize processInfoCtrl;
 @synthesize ramInfoCtrl;
@@ -60,6 +61,7 @@
     
     self.cpuInfoCtrl = [[CPUInfoController alloc] init];
     self.deviceInfoCtrl = [[DeviceInfoController alloc] init];
+    self.gpsInfoCtrl = [[GPSInfoController alloc] init];
     self.gpuInfoCtrl = [[GPUInfoController alloc] init];
     self.processInfoCtrl = [[ProcessInfoController alloc] init];
     self.ramInfoCtrl = [[RAMInfoController alloc] init];

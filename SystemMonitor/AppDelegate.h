@@ -13,6 +13,7 @@
 #import "AMDevice.h"
 #import "DeviceInfoController.h"
 #import "CPUInfoController.h"
+#import "GPSInfoController.h"
 #import "GPUInfoController.h"
 #import "RAMInfoController.h"
 #import "ProcessInfoController.h"
@@ -27,6 +28,7 @@
 @property (nonatomic, strong) AMDevice              *iDevice;
 @property (nonatomic, strong) CPUInfoController     *cpuInfoCtrl;
 @property (nonatomic, strong) DeviceInfoController  *deviceInfoCtrl;
+@property (nonatomic, strong) GPSInfoController     *gpsInfoCtrl;
 @property (nonatomic, strong) GPUInfoController     *gpuInfoCtrl;
 @property (nonatomic, strong) ProcessInfoController *processInfoCtrl;
 @property (nonatomic, strong) RAMInfoController     *ramInfoCtrl;

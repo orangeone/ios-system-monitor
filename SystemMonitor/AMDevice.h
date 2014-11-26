@@ -12,6 +12,7 @@
 #import <Foundation/Foundation.h>
 #import "DeviceInfo.h"
 #import "CPUInfo.h"
+#import "GPSInfo.h"
 #import "GPUInfo.h"
 #import "RAMInfo.h"
 #import "NetworkInfo.h"
@@ -27,6 +28,7 @@
 @interface AMDevice : NSObject
 @property (nonatomic, strong, readonly) DeviceInfo     *deviceInfo;
 @property (nonatomic, strong, readonly) CPUInfo        *cpuInfo;
+@property (nonatomic, strong, readonly) GPSInfo        *gpsInfo;
 @property (nonatomic, strong, readonly) GPUInfo        *gpuInfo;
 @property (nonatomic, copy, readonly)   NSArray        *processes;
 @property (nonatomic, strong, readonly) RAMInfo        *ramInfo;

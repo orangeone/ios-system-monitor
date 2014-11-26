@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		0300A5BC19D88F1300D5F7E1 /* AMCommonUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0300A5BB19D88F1300D5F7E1 /* AMCommonUI.m */; };
 		033D9651182EC6B6009477E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033D9650182EC6B6009477E7 /* Images.xcassets */; };
-		03724CD6182D7E3700221FE8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03724CD5182D7E3700221FE8 /* XCTest.framework */; };
-		03724CD7182D7E3700221FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703D22DD173818EC0001E3B3 /* Foundation.framework */; };
-		03724CD8182D7E3700221FE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703D22DB173818EC0001E3B3 /* UIKit.framework */; };
-		03724CDE182D7E3700221FE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03724CDC182D7E3700221FE8 /* InfoPlist.strings */; };
-		03724CE8182D7EA200221FE8 /* AMUtils_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03724CE7182D7EA200221FE8 /* AMUtils_Tests.m */; };
 		03B6316919D8967100DA9785 /* TubeTexture@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03B6316819D8967100DA9785 /* TubeTexture@3x.png */; };
 		03DA2AB9183930700014C322 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F9B39B18392D7500804E1D /* HockeySDK.framework */; };
 		03DA2ABA183930C80014C322 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03F9B39E18392D7500804E1D /* HockeySDKResources.bundle */; };
@@ -102,23 +97,16 @@
 		70FC38EB174F51870085EBC3 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FC38EA174F51870085EBC3 /* AssetsLibrary.framework */; };
 		70FC38ED174F73F80085EBC3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FC38EC174F73F80085EBC3 /* CoreMedia.framework */; };
 		70FC38EF174F74410085EBC3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FC38EE174F74400085EBC3 /* AVFoundation.framework */; };
+		8CF18BD81A256B55007E737B /* GPSInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF18BD71A256B55007E737B /* GPSInfo.m */; };
+		8CF18BDC1A256B98007E737B /* GPSInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF18BDB1A256B98007E737B /* GPSInfoController.m */; };
+		8CF18BE01A256DED007E737B /* GPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF18BDF1A256DED007E737B /* GPSViewController.m */; };
+		8CF18BE21A257D69007E737B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF18BE11A257D69007E737B /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		03724CE2182D7E3700221FE8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 703D22D0173818EB0001E3B3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 703D22D7173818EC0001E3B3;
-			remoteInfo = SystemMonitor;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0300A5BA19D88F1300D5F7E1 /* AMCommonUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCommonUI.h; sourceTree = "<group>"; };
 		0300A5BB19D88F1300D5F7E1 /* AMCommonUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCommonUI.m; sourceTree = "<group>"; };
 		033D9650182EC6B6009477E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		03724CD4182D7E3700221FE8 /* SystemMonitor Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SystemMonitor Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03724CD5182D7E3700221FE8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		03724CDB182D7E3700221FE8 /* SystemMonitor Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SystemMonitor Tests-Info.plist"; sourceTree = "<group>"; };
 		03724CDD182D7E3700221FE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -274,23 +262,21 @@
 		70FC38EA174F51870085EBC3 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		70FC38EC174F73F80085EBC3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		70FC38EE174F74400085EBC3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8CF18BD71A256B55007E737B /* GPSInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSInfo.m; sourceTree = "<group>"; };
+		8CF18BD91A256B68007E737B /* GPSInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSInfo.h; sourceTree = "<group>"; };
+		8CF18BDA1A256B78007E737B /* GPSInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSInfoController.h; sourceTree = "<group>"; };
+		8CF18BDB1A256B98007E737B /* GPSInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSInfoController.m; sourceTree = "<group>"; };
+		8CF18BDE1A256DED007E737B /* GPSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSViewController.h; sourceTree = "<group>"; };
+		8CF18BDF1A256DED007E737B /* GPSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSViewController.m; sourceTree = "<group>"; };
+		8CF18BE11A257D69007E737B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03724CD1182D7E3700221FE8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03724CD6182D7E3700221FE8 /* XCTest.framework in Frameworks */,
-				03724CD8182D7E3700221FE8 /* UIKit.framework in Frameworks */,
-				03724CD7182D7E3700221FE8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		703D22D5173818EC0001E3B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF18BE21A257D69007E737B /* CoreLocation.framework in Frameworks */,
 				03E332F5183FE0F100480CE7 /* CoreTelephony.framework in Frameworks */,
 				03DA2AC01839310A0014C322 /* Security.framework in Frameworks */,
 				03DA2ABE183930F90014C322 /* QuartzCore.framework in Frameworks */,
@@ -505,6 +491,7 @@
 				03DF1A6E183A11FD00F7AF12 /* CpuUI */,
 				03DF1A73183A11FD00F7AF12 /* DeviceSpecificUI */,
 				03DF1A76183A11FD00F7AF12 /* GeneralUI */,
+				8CF18BDD1A256DBE007E737B /* GpsUI */,
 				03DF1A79183A11FD00F7AF12 /* GpuUI */,
 				03DF1A82183A11FD00F7AF12 /* NetworkUI */,
 				03DF1A85183A11FD00F7AF12 /* ProcessUI */,
@@ -698,7 +685,6 @@
 			isa = PBXGroup;
 			children = (
 				703D22D8173818EC0001E3B3 /* SystemMonitor.app */,
-				03724CD4182D7E3700221FE8 /* SystemMonitor Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -706,6 +692,7 @@
 		703D22DA173818EC0001E3B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CF18BE11A257D69007E737B /* CoreLocation.framework */,
 				03F9B3A118392DE600804E1D /* 3rdParty */,
 				70FC38EA174F51870085EBC3 /* AssetsLibrary.framework */,
 				70FC38EE174F74400085EBC3 /* AVFoundation.framework */,
@@ -734,6 +721,7 @@
 				03DF1A20183A11FD00F7AF12 /* CPU */,
 				03DF1A29183A11FD00F7AF12 /* Device */,
 				03DF1A2E183A11FD00F7AF12 /* GL */,
+				8CDCA46E1A2566AF00E6BA64 /* GPS */,
 				03DF1A40183A11FD00F7AF12 /* GPU */,
 				03DF1A45183A11FD00F7AF12 /* Network */,
 				03DF1A4F183A11FD00F7AF12 /* Process */,
@@ -755,27 +743,30 @@
 			path = "ActivityMonitor++";
 			sourceTree = "<group>";
 		};
+		8CDCA46E1A2566AF00E6BA64 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				8CF18BD91A256B68007E737B /* GPSInfo.h */,
+				8CF18BD71A256B55007E737B /* GPSInfo.m */,
+				8CF18BDA1A256B78007E737B /* GPSInfoController.h */,
+				8CF18BDB1A256B98007E737B /* GPSInfoController.m */,
+			);
+			name = GPS;
+			path = SystemMonitor/GPS;
+			sourceTree = SOURCE_ROOT;
+		};
+		8CF18BDD1A256DBE007E737B /* GpsUI */ = {
+			isa = PBXGroup;
+			children = (
+				8CF18BDE1A256DED007E737B /* GPSViewController.h */,
+				8CF18BDF1A256DED007E737B /* GPSViewController.m */,
+			);
+			path = GpsUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		03724CD3182D7E3700221FE8 /* SystemMonitor Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 03724CE4182D7E3700221FE8 /* Build configuration list for PBXNativeTarget "SystemMonitor Tests" */;
-			buildPhases = (
-				03724CD0182D7E3700221FE8 /* Sources */,
-				03724CD1182D7E3700221FE8 /* Frameworks */,
-				03724CD2182D7E3700221FE8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				03724CE3182D7E3700221FE8 /* PBXTargetDependency */,
-			);
-			name = "SystemMonitor Tests";
-			productName = "SystemMonitor Tests";
-			productReference = 03724CD4182D7E3700221FE8 /* SystemMonitor Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		703D22D7173818EC0001E3B3 /* SystemMonitor */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 703D231E173818EC0001E3B3 /* Build configuration list for PBXNativeTarget "SystemMonitor" */;
@@ -802,11 +793,13 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = st;
 				TargetAttributes = {
-					03724CD3182D7E3700221FE8 = {
-						TestTargetID = 703D22D7173818EC0001E3B3;
-					};
 					703D22D7173818EC0001E3B3 = {
-						DevelopmentTeam = C8Q8Y4HWTP;
+						DevelopmentTeam = CB985SXKA3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -823,20 +816,11 @@
 			projectRoot = "";
 			targets = (
 				703D22D7173818EC0001E3B3 /* SystemMonitor */,
-				03724CD3182D7E3700221FE8 /* SystemMonitor Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03724CD2182D7E3700221FE8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03724CDE182D7E3700221FE8 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		703D22D6173818EC0001E3B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -863,14 +847,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		03724CD0182D7E3700221FE8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03724CE8182D7EA200221FE8 /* AMUtils_Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		703D22D4173818EC0001E3B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -878,11 +854,13 @@
 				03DF1AB3183A11FD00F7AF12 /* GLDataLine.m in Sources */,
 				03DF1AE4183A11FD00F7AF12 /* AMUtils.m in Sources */,
 				03DF1AD0183A11FD00F7AF12 /* GPUViewController.m in Sources */,
+				8CF18BE01A256DED007E737B /* GPSViewController.m in Sources */,
 				03DF1ACF183A11FD00F7AF12 /* GeneralViewController.m in Sources */,
 				03DF1ADF183A11FD00F7AF12 /* RootTableViewController.m in Sources */,
 				03DF1AE1183A11FD00F7AF12 /* StorageViewController.m in Sources */,
 				0300A5BC19D88F1300D5F7E1 /* AMCommonUI.m in Sources */,
 				03DF1AC6183A11FD00F7AF12 /* BatteryViewController.m in Sources */,
+				8CF18BDC1A256B98007E737B /* GPSInfoController.m in Sources */,
 				03DF1AC3183A11FD00F7AF12 /* RAMUsage.m in Sources */,
 				03DF1ABD183A11FD00F7AF12 /* NetworkInfo.m in Sources */,
 				03DF1ACB183A11FD00F7AF12 /* RetrievingCell.m in Sources */,
@@ -917,6 +895,7 @@
 				03DF1AD2183A11FD00F7AF12 /* iPhoneRootTableViewController.m in Sources */,
 				03DF1AB1183A11FD00F7AF12 /* GLCommon.m in Sources */,
 				03DF1AC2183A11FD00F7AF12 /* RAMInfoController.m in Sources */,
+				8CF18BD81A256B55007E737B /* GPSInfo.m in Sources */,
 				03DF1AAA183A11FD00F7AF12 /* BatteryInfoController.m in Sources */,
 				03DF1AC1183A11FD00F7AF12 /* RAMInfo.m in Sources */,
 				03DF1AB8183A11FD00F7AF12 /* GLTube.m in Sources */,
@@ -938,14 +917,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		03724CE3182D7E3700221FE8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 703D22D7173818EC0001E3B3 /* SystemMonitor */;
-			targetProxy = 03724CE2182D7E3700221FE8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		03724CDC182D7E3700221FE8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -966,70 +937,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		03724CE5182D7E3700221FE8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SystemMonitor.app/SystemMonitor";
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SystemMonitor Tests/SystemMonitor Tests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "SystemMonitor Tests/SystemMonitor Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		03724CE6182D7E3700221FE8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SystemMonitor.app/SystemMonitor";
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				ENABLE_NS_ASSERTIONS = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SystemMonitor Tests/SystemMonitor Tests-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "SystemMonitor Tests/SystemMonitor Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 		703D231C173818EC0001E3B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1113,8 +1020,8 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Arvydas Sidorenko (H5356Y5D3V)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Arvydas Sidorenko (H5356Y5D3V)";
+				CODE_SIGN_IDENTITY = "iOS Development: Kenji Yoshioka (7MM7456JDG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/3rdParty/HockeySDK/HockeySDK.embeddedframework";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1134,11 +1041,11 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = SystemMonitor;
-				PROVISIONING_PROFILE = "8665bbbe-3d65-4234-a3c9-e29f50f47550";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8665bbbe-3d65-4234-a3c9-e29f50f47550";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s x86_64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1152,8 +1059,8 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Arvydas Sidorenko (H5356Y5D3V)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Arvydas Sidorenko (H5356Y5D3V)";
+				CODE_SIGN_IDENTITY = "iOS Development: Kenji Yoshioka (7MM7456JDG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/3rdParty/HockeySDK/HockeySDK.embeddedframework";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1172,11 +1079,11 @@
 					"$(SRCROOT)/3rdParty/Lumberjack",
 				);
 				PRODUCT_NAME = SystemMonitor;
-				PROVISIONING_PROFILE = "8665bbbe-3d65-4234-a3c9-e29f50f47550";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8665bbbe-3d65-4234-a3c9-e29f50f47550";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s x86_64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1184,15 +1091,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03724CE4182D7E3700221FE8 /* Build configuration list for PBXNativeTarget "SystemMonitor Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				03724CE5182D7E3700221FE8 /* Debug */,
-				03724CE6182D7E3700221FE8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		703D22D3173818EB0001E3B3 /* Build configuration list for PBXProject "SystemMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
