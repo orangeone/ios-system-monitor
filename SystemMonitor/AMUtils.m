@@ -245,8 +245,8 @@
 
 + (void)openReviewAppPage
 {
-//TODO    NSString *appReviewLink = @"itms-apps://itunes.apple.com/app/id740765454";
-//	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:appReviewLink]];
+    NSString *appReviewLink = @"itms-apps://itunes.apple.com/app/id945609833";
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:appReviewLink]];
 }
 
 @end

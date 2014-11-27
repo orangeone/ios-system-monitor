@@ -80,8 +80,8 @@ enum {
 {
     AppDelegate *app = [AppDelegate sharedDelegate];
     
-    [self.gpsLatitudeLabel setText:[NSString stringWithFormat:@"%.8f", app.iDevice.gpsInfo.location.coordinate.latitude]];
-    [self.gpsLongitudeLabel setText:[NSString stringWithFormat:@"%.8f", app.iDevice.gpsInfo.location.coordinate.longitude]];
+    [self.gpsLatitudeLabel setText:[NSString stringWithFormat:@"%.8f", app.iDevice.gpsInfo.latitude]];
+    [self.gpsLongitudeLabel setText:[NSString stringWithFormat:@"%.8f", app.iDevice.gpsInfo.longitude]];
     [self.gpsAddressLabel setText:app.iDevice.gpsInfo.address];
     [self.gpsDurationLabel setText:app.iDevice.gpsInfo.duration];
 }

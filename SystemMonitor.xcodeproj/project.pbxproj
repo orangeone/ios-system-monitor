@@ -791,7 +791,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = st;
+				ORGANIZATIONNAME = orangeone.jp;
 				TargetAttributes = {
 					703D22D7173818EC0001E3B3 = {
 						DevelopmentTeam = CB985SXKA3;
@@ -1020,8 +1020,8 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
-				CODE_SIGN_IDENTITY = "iOS Development: Kenji Yoshioka (7MM7456JDG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: HEAPS. Co., Ltd. (CB985SXKA3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: HEAPS. Co., Ltd. (CB985SXKA3)";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/3rdParty/HockeySDK/HockeySDK.embeddedframework";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1041,8 +1041,8 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = SystemMonitor;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "1e76069b-f19c-4435-ae71-4f9c5c6929d5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1e76069b-f19c-4435-ae71-4f9c5c6929d5";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "armv7 armv7s x86_64";
@@ -1059,8 +1059,8 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
-				CODE_SIGN_IDENTITY = "iOS Development: Kenji Yoshioka (7MM7456JDG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: HEAPS. Co., Ltd. (CB985SXKA3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: HEAPS. Co., Ltd. (CB985SXKA3)";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/3rdParty/HockeySDK/HockeySDK.embeddedframework";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1079,8 +1079,8 @@
 					"$(SRCROOT)/3rdParty/Lumberjack",
 				);
 				PRODUCT_NAME = SystemMonitor;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "1e76069b-f19c-4435-ae71-4f9c5c6929d5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1e76069b-f19c-4435-ae71-4f9c5c6929d5";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "armv7 armv7s x86_64";

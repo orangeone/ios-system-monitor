@@ -14,21 +14,25 @@
 
 @interface GPSInfoController()
 @property (nonatomic, strong) GPSInfo   *gpsInfo;
+@property (nonatomic, strong) NSDate  *start;
+@property (nonatomic, strong) NSTimer *timer;
+#ifndef SM_GPS_DISABLED
 @property (nonatomic, strong) CLGeocoder *geocoder;
 @property (nonatomic, strong) CLPlacemark *placemark;
 @property (nonatomic, strong) CLLocationManager *locationManager;
-@property (nonatomic, strong) NSDate  *start;
-@property (nonatomic, strong) NSTimer *timer;
+#endif
 @end
 
 @implementation GPSInfoController
 @synthesize delegate;
-
 @synthesize gpsInfo;
-@synthesize placemark;
-@synthesize locationManager;
 @synthesize start;
 @synthesize timer;
+#ifndef SM_GPS_DISABLED
+@synthesize geocoder;
+@synthesize placemark;
+@synthesize locationManager;
+#endif
 
 #pragma mark - private
 - (void)updateDuration
@@ -55,6 +59,7 @@
 
 - (void)startGPSMonitoring
 {
+#ifndef SM_GPS_DISABLED
     if (!self.locationManager)
     {
         self.locationManager = [[CLLocationManager alloc] init];
@@ -62,11 +67,14 @@
 
         self.locationManager.delegate = self;
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-        
-        self.start = [NSDate date];
     }
     [self.locationManager startUpdatingLocation];
+#endif
 
+    if (!self.start) {
+        self.start = [NSDate date];
+    }
+    
     if (!self.timer) {
         self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self
                                                     selector:@selector(updateDuration) userInfo:nil repeats:YES];
@@ -75,16 +83,20 @@
 
 - (void)stopGPSMonitoring
 {
+#ifndef SM_GPS_DISABLED
     if (self.locationManager)
     {
         [self.locationManager stopUpdatingLocation];
     }
+#endif
+    
     if (self.timer) {
         [self.timer invalidate];
         self.timer = nil;
     }
 }
 
+#ifndef SM_GPS_DISABLED
 
 #pragma mark - CLLocationManagerDelegate
 
@@ -104,7 +116,8 @@
         return;
     }
 
-    self.gpsInfo.location = newLocation;
+    self.gpsInfo.latitude = newLocation.coordinate.latitude;
+    self.gpsInfo.longitude = newLocation.coordinate.longitude;
 
     // Reverse Geocoding
     NSLog(@"Resolving the Address");
@@ -131,5 +144,6 @@
         [self.delegate gpsStatusUpdated];
     }
 }
+#endif
 
 @end

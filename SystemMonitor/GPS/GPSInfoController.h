@@ -8,14 +8,25 @@
 //
 
 #import <Foundation/Foundation.h>
+
+#define SM_GPS_DISABLED
+
+#ifndef SM_GPS_DISABLED
 #import <CoreLocation/CoreLocation.h>
+#endif
+
 #import "GPSInfo.h"
 
 @protocol GPSInfoControllerDelegate
 - (void)gpsStatusUpdated;
 @end
 
+#ifndef SM_GPS_DISABLED
 @interface GPSInfoController : NSObject<CLLocationManagerDelegate>
+#else
+@interface GPSInfoController : NSObject
+#endif
+
 @property (nonatomic, weak) id<GPSInfoControllerDelegate> delegate;
 
 - (GPSInfo*)getGPSInfo;

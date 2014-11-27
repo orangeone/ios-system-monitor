@@ -12,7 +12,8 @@
 #import "GPSInfo.h"
 
 @implementation GPSInfo
-@synthesize location;
+@synthesize latitude;
+@synthesize longitude;
 @synthesize address;
 @synthesize duration;
 @end
