@@ -14,9 +14,6 @@
 #import "GPSViewController.h"
 #import "AMCommonUI.h"
 
-enum {
-    SECTION_BATTERY_TUBE=1
-};
 
 @interface GPSViewController() <GPSInfoControllerDelegate>
 //@property (nonatomic, strong) GLTube    *glBatteryTube;
@@ -24,8 +21,8 @@ enum {
 
 @property (nonatomic, weak) IBOutlet UILabel *gpsLatitudeLabel;
 @property (nonatomic, weak) IBOutlet UILabel *gpsLongitudeLabel;
-@property (nonatomic, weak) IBOutlet UILabel *gpsAddressLabel;
 @property (nonatomic, weak) IBOutlet UILabel *gpsDurationLabel;
+@property (nonatomic, weak) IBOutlet UILabel *gpsAddressLabel;
 
 
 - (void)updateGpsLabels;
