@@ -9,9 +9,10 @@
 
 #import <Foundation/Foundation.h>
 
+//#define SM_GPS_NOT_LINK
 #define SM_GPS_DISABLED
 
-#ifndef SM_GPS_DISABLED
+#ifndef SM_GPS_NOT_LINK
 #import <CoreLocation/CoreLocation.h>
 #endif
 
@@ -21,7 +22,7 @@
 - (void)gpsStatusUpdated;
 @end
 
-#ifndef SM_GPS_DISABLED
+#ifndef SM_GPS_NOT_LINK
 @interface GPSInfoController : NSObject<CLLocationManagerDelegate>
 #else
 @interface GPSInfoController : NSObject

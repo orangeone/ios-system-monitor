@@ -1041,11 +1041,11 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = SystemMonitor;
-				PROVISIONING_PROFILE = "1e76069b-f19c-4435-ae71-4f9c5c6929d5";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1e76069b-f19c-4435-ae71-4f9c5c6929d5";
+				PROVISIONING_PROFILE = "2862bd40-bcbf-4362-892e-87cd0b428cdf";
+				"PROVISIONING_PROFILE[sdk=*]" = "2862bd40-bcbf-4362-892e-87cd0b428cdf";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv7 armv7s x86_64";
+				VALID_ARCHS = "armv7 armv7s x86_64 arm64 armv6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1079,11 +1079,11 @@
 					"$(SRCROOT)/3rdParty/Lumberjack",
 				);
 				PRODUCT_NAME = SystemMonitor;
-				PROVISIONING_PROFILE = "1e76069b-f19c-4435-ae71-4f9c5c6929d5";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1e76069b-f19c-4435-ae71-4f9c5c6929d5";
+				PROVISIONING_PROFILE = "2862bd40-bcbf-4362-892e-87cd0b428cdf";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2862bd40-bcbf-4362-892e-87cd0b428cdf";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv7 armv7s x86_64";
+				VALID_ARCHS = "armv7 armv7s x86_64 arm64 armv6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

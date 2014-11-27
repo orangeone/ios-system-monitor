@@ -13,10 +13,10 @@
 #import "GPSInfoController.h"
 
 @interface GPSInfoController()
-@property (nonatomic, strong) GPSInfo   *gpsInfo;
+@property (nonatomic, strong) GPSInfo *gpsInfo;
 @property (nonatomic, strong) NSDate  *start;
 @property (nonatomic, strong) NSTimer *timer;
-#ifndef SM_GPS_DISABLED
+#ifndef SM_GPS_NOT_LINK
 @property (nonatomic, strong) CLGeocoder *geocoder;
 @property (nonatomic, strong) CLPlacemark *placemark;
 @property (nonatomic, strong) CLLocationManager *locationManager;
@@ -28,7 +28,7 @@
 @synthesize gpsInfo;
 @synthesize start;
 @synthesize timer;
-#ifndef SM_GPS_DISABLED
+#ifndef SM_GPS_NOT_LINK
 @synthesize geocoder;
 @synthesize placemark;
 @synthesize locationManager;
@@ -59,6 +59,7 @@
 
 - (void)startGPSMonitoring
 {
+#ifndef SM_GPS_NOT_LINK
 #ifndef SM_GPS_DISABLED
     if (!self.locationManager)
     {
@@ -69,6 +70,7 @@
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     }
     [self.locationManager startUpdatingLocation];
+#endif
 #endif
 
     if (!self.start) {
@@ -83,7 +85,7 @@
 
 - (void)stopGPSMonitoring
 {
-#ifndef SM_GPS_DISABLED
+#ifndef SM_GPS_NOT_LINK
     if (self.locationManager)
     {
         [self.locationManager stopUpdatingLocation];
