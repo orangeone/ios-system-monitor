@@ -1034,7 +1034,7 @@
 					"$(SRCROOT)/3rdParty/Lumberjack/include",
 				);
 				INFOPLIST_FILE = "SystemMonitor/Supporting Files/SystemMonitor-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/3rdParty/Lumberjack",
@@ -1073,7 +1073,7 @@
 					"$(SRCROOT)/3rdParty/Lumberjack/include",
 				);
 				INFOPLIST_FILE = "SystemMonitor/Supporting Files/SystemMonitor-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/3rdParty/Lumberjack",
